@@ -1,0 +1,22 @@
+<!--
+ 1.给input标签绑定input事件
+  绑定关键字bindinput
+
+ 2.如何获取输入框的值
+  通过事件源对象来处理，及文件中的e
+-->
+<input type="text" bindinput="handleInput" />
+<button bindtap="handletap" data-operation="{{1}}">+</button>
+<button bindtap="handletap" data-operation="{{-1}}">-</button>
+<view>{{num}}</view>
+<!--
+3.将输入框中的值赋值到data中，不能直接
+1.this.data.num=e.detail.value
+2.this.num=e.detail.value
+
+4.需要加入的点击事件
+1.bindtap(bindclick)
+2.无法在小程序当中的事件中直接传参
+3.通过自定义属性的方式来传递参数  data-operation = "{{x}}"即为自定义传参
+4.事件源中获取自定义属性  
+-->

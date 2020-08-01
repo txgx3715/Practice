@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/mine/mine",
+    "pages/demo2/demo2",
+    "pages/search/search",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/demo/001",
+    "pages/im/room/room"
+  ],
+
+
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#0094FF",
+    "navigationBarTitleText": "点餐栏",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "icon/home2.png",
+      "selectedIconPath": "icon/home.png"
+    },{
+      "pagePath": "pages/demo2/demo2",
+      "text": "商店",
+      "iconPath": "icon/shop2.png",
+      "selectedIconPath": "icon/shop.png"
+    },{
+      "pagePath": "pages/search/search",
+      "text": "搜索",
+      "iconPath": "icon/search2.png",
+      "selectedIconPath": "icon/search.png"
+    },{
+      "pagePath": "pages/mine/mine",
+      "text": "账户",
+      "iconPath": "icon/mine2.png",
+      "selectedIconPath": "icon/mine.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
