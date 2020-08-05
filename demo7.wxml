@@ -1,0 +1,23 @@
+<!--
+    1 轮播图外层容器 swiper
+    2 每一个轮播项 swiper-item
+    3 swiper标签 存在默认样式
+        1 width 100%
+        2 height 150px   image 存在默认比例宽高320* 240
+        3 swiper 高度无法实现由内容撑开（只能根据swiper调整图片素材）
+    4 先找出原图的宽度和高度 等比例给swiper 定宽高
+    转换比例：
+        swiper宽度/swiper高度 = 原图宽度/原图高度
+        swiper高度 = swiper宽度 *原图的高度 / 原图的宽度
+
+
+-->
+
+<swiper >
+<swiper-item><image src="https://img.alicdn.com/tfs/TB1Ju.jbycKOu4jSZKbXXc19XXa-1125-350.jpg_1152x1920Q75s50.jpg_.webp" mode="widthFix" /> </swiper-item>
+<swiper-item><image src="https://img.alicdn.com/tfs/TB1smTfPQL0gK0jSZFtXXXQCXXa-750-235.jpg" mode="widthFix" /> </swiper-item>
+
+
+  
+</swiper>
+  
