@@ -1,0 +1,20 @@
+<!--
+导航组件 navigator
+0 块级元素 默认换行 可以增加宽度和高度
+1 url 要跳转的页面路径 绝对路径 相对路径
+2 target 要跳转到当前小程序还是其他的小程序页面
+    self    默认值 自己小程序的页面
+    miniprogram     跳转到其他小程序
+3 open-type 跳转方式
+    1 navigate   默认值   保留当前页面，跳转到应用内的某个页面，但是不能跳到 tabbar 页面
+    2 redirect   关闭当前页面，跳转到应用内的某个页面，但是不允许跳转到 tabbar 页面
+    3 switchTab 跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面
+    4 reLaunch 关闭所有页面，打开到应用内的某个页面(随意跳转)
+    5 navigateBack 关闭当前页面 返回上一页面或多级页面，通过getCurrentPage()获取当前的页面栈，决定需要返回几层
+    6 exit 退出所跳转的小程序，target = "miniProgram"时生效
+-->
+<navigator url="/pages/swiper/demo7" >点击这里跳转</navigator>
+<navigator open-type="redirect" url="/pages/swiper/demo7" >点击这里跳转 redirect</navigator>
+<navigator open-type="switchTab" url="/pages/home/home" >switchTab点击这里跳转 Tabbar界面</navigator>
+<navigator open-type="reLaunch" url="/pages/home/home" >reLaunch点击这里随意进行跳转 Tabbar界面</navigator>
+  
