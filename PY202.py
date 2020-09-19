@@ -4,19 +4,14 @@
 #
 # 注意：提示框架代码可以任意修改，以完成程序功能为准
 
+names=input("请输入各个同学行业名称，行业名称之间用空格间隔（回车结束输入）：")
+n = names.split()
+d = {}
+for i in range(len(n)):
+    d[n[i]] = d.get(n[i],0)+1
+ls = list(d.items())
+ls.sort(key=lambda x:x[1], reverse=True) # 按照数量排序
+for k in range(len(ls)):
+    zy,num = ls[k]
+    print("{}:{}".format(zy,num))
 
-data = input()  # 课程名 考分
-d={}
-while data:
-    t=data.split()
-    d[t[0]]=t[1]
-    data = input()
-ls=list(d.items())
-ls.sort(key=lambda x:x[1],reverse=True)
-s1,g1=ls[0]
-s2,g2=ls[len(ls)-1]
-a=0
-for i in d.values():
-    a=a+int(i)
-a=a/len(ls)
-print("最高分课程是{} {}, 最低分课程是{} {}, 平均分是{:.2f}".format(s1,g1,s2,g2,a))
