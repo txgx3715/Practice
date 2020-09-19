@@ -1,17 +1,14 @@
-# 以下代码为提示框架
-# 请在...处使用一行或多行代码替换
-# 请在______处使用一行代码替换
-#
-# 注意：提示框架代码可以任意修改，以完成程序功能为准
+#获得用户的非数字输入， 如果输入中存在数字， 则要求用户重新输入， 直至满足条件为止， 并输出用户
+#输入字符的个数， 完善PY202 ． 文件中的代码。
 
-names=input("请输入各个同学行业名称，行业名称之间用空格间隔（回车结束输入）：")
-n = names.split()
-d = {}
-for i in range(len(n)):
-    d[n[i]] = d.get(n[i],0)+1
-ls = list(d.items())
-ls.sort(key=lambda x:x[1], reverse=True) # 按照数量排序
-for k in range(len(ls)):
-    zy,num = ls[k]
-    print("{}:{}".format(zy,num))
 
+while True:
+    s = input("请输入不带数字的文本:")
+    p = 0
+    for i in s:
+        if "0"<=i<="9":
+            p = p+1
+    if p == 0:
+        break
+        
+print(len(s))
